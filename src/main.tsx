@@ -38,24 +38,6 @@ function App() {
           </div>
         </div>
 
-        <div className="device-visual" aria-label="Portfolio preview mockup">
-          <div className="phone">
-            <div className="phone-top" />
-            <div className="phone-screen">
-              <div className="screen-pill" />
-              <div className="screen-title">Selected Work</div>
-              <div className="screen-card wide" />
-              <div className="screen-grid">
-                <span />
-                <span />
-                <span />
-                <span />
-              </div>
-              <div className="screen-line" />
-              <div className="screen-line short" />
-            </div>
-          </div>
-        </div>
       </section>
 
       <section className="section intro" aria-label="About this portfolio">

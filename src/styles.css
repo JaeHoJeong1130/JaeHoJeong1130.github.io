@@ -1,19 +1,35 @@
 :root {
-  color: #111114;
-  background: #fbfbfd;
+  color: #1d1d1f;
+  background: #F5F5F7;
   font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Inter,
     sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  --ink: #111114;
-  --muted: #6b6b76;
-  --soft: #f3f4f7;
-  --line: rgba(17, 17, 20, 0.1);
-  --blue: #0071e3;
-  --green: #2f8f66;
-  --panel: rgba(255, 255, 255, 0.74);
+  --ink: #1d1d1f;
+  --muted: #86868b;
+  --soft: rgba(255, 255, 255, 0.5);
+  --line: #d2d2d7;
+  --blue: #007AFF;
+  --green: #34C759;
+  --panel: rgba(255, 255, 255, 0.8);
+  --destructive: #FF3B30;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #FFFFFF;
+    background: #000000;
+    --ink: #FFFFFF;
+    --muted: #98989D;
+    --soft: rgba(28, 28, 30, 0.5);
+    --line: #38383A;
+    --blue: #0A84FF;
+    --green: #30D158;
+    --panel: #1C1C1E;
+    --destructive: #FF453A;
+  }
 }
 
 * {
@@ -28,6 +44,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  line-height: 1.6;
 }
 
 a {
@@ -52,9 +69,10 @@ a {
   padding: 0 18px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(251, 251, 253, 0.82);
-  backdrop-filter: blur(22px);
-  box-shadow: 0 18px 50px rgba(17, 17, 20, 0.08);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .brand {
@@ -81,11 +99,12 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   gap: 56px;
-  min-height: 72vh;
+  min-height: 50vh;
   padding-bottom: 48px;
+  padding-top: 48px;
 }
 
 .hero-copy {
@@ -173,7 +192,11 @@ h3 {
 .primary {
   color: #fff;
   background: var(--blue);
-  box-shadow: 0 16px 38px rgba(0, 113, 227, 0.22);
+  box-shadow: none;
+}
+
+.primary:hover {
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
 }
 
 .secondary,
@@ -308,20 +331,22 @@ h3 {
   min-height: 310px;
   padding: 24px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 16px;
   background: var(--panel);
-  box-shadow: 0 18px 45px rgba(17, 17, 20, 0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
   transition:
-    transform 180ms ease,
-    box-shadow 180ms ease,
-    border-color 180ms ease;
+    transform 200ms ease-in-out,
+    box-shadow 200ms ease-in-out,
+    border-color 200ms ease-in-out;
 }
 
 .project-card:hover,
 .skill-block:hover {
   transform: translateY(-4px);
-  border-color: rgba(0, 113, 227, 0.24);
-  box-shadow: 0 24px 55px rgba(17, 17, 20, 0.1);
+  border-color: rgba(0, 122, 255, 0.24);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .card-header,
@@ -404,9 +429,10 @@ h3 {
   margin: 48px 0 28px;
   padding: 38px;
   border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #111114;
+  border-radius: 16px;
+  background: #1C1C1E;
   color: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
 }
 
 .contact-band h2 {
@@ -421,7 +447,7 @@ h3 {
 }
 
 .contact-band .eyebrow {
-  color: #72a7ff;
+  color: var(--blue);
 }
 
 .contact-band .icon-link,
@@ -429,6 +455,7 @@ h3 {
   color: #fff;
   border-color: rgba(255, 255, 255, 0.16);
   background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
 }
 
 @media (max-width: 900px) {
