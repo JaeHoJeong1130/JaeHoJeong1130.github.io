@@ -20,10 +20,10 @@ function App() {
 
       <section className="hero" id="home">
         <div className="hero-copy">
-          <p className="eyebrow">SW Developer & AI Engineer</p>
-          <h1>정재호입니다. AI와 소프트웨어 엔지니어링으로 문제를 해결합니다.</h1>
+          <p className="eyebrow">Backend & AI Engineer</p>
+          <h1>정재호</h1>
           <p className="hero-text">
-            AI 모델링과 웹 개발 역량을 결합하여, 실질적이고 견고한 비즈니스 솔루션을 구축합니다.
+            데이터 기반의 문제 해결과 효율적인 시스템 구축에 집중하는 소프트웨어 엔지니어입니다.
           </p>
           <div className="hero-actions" aria-label="Primary actions">
             <a className="button primary" href="#projects">
@@ -36,13 +36,6 @@ function App() {
             </a>
           </div>
         </div>
-
-      </section>
-
-      <section className="section intro" aria-label="About this portfolio">
-        <p>
-          데이터 분석 및 모델링 역량과 풀스택 지식을 바탕으로, 단순한 연구에 그치지 않고 실제 운영 가능한 견고한 시스템을 설계합니다.
-        </p>
       </section>
 
       <section className="section" id="projects">
@@ -96,9 +89,8 @@ function App() {
 
       <section className="contact-band" id="contact">
         <div>
-          <p className="eyebrow">Contact</p>
-          <h2>함께할 준비가 되셨나요?</h2>
-          <p>프로젝트, 기술, 협업 방식 등 편하게 연락주세요.</p>
+          <h2>Contact</h2>
+          <p>이메일이나 깃허브로 편하게 연락주세요.</p>
         </div>
         <div className="contact-actions">
           <a className="icon-link" href="https://github.com/JaeHoJeong1130">
