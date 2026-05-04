@@ -21,10 +21,9 @@ function App() {
       <section className="hero" id="home">
         <div className="hero-copy">
           <p className="eyebrow">SW Developer & AI Engineer</p>
-          <h1>정재호입니다. 소프트웨어 개발과 AI, 그 교차점에서 문제를 해결합니다.</h1>
+          <h1>정재호입니다. AI와 소프트웨어 엔지니어링으로 문제를 해결합니다.</h1>
           <p className="hero-text">
-            반도체 솔루션 기업에서 AI 모델링과 소프트웨어 개발을 병행하며, 
-            복잡한 비즈니스 문제를 해결하는 실질적인 엔지니어링을 수행합니다.
+            AI 모델링과 웹 개발 역량을 결합하여, 실질적이고 견고한 비즈니스 솔루션을 구축합니다.
           </p>
           <div className="hero-actions" aria-label="Primary actions">
             <a className="button primary" href="#projects">
@@ -42,9 +41,7 @@ function App() {
 
       <section className="section intro" aria-label="About this portfolio">
         <p>
-          다수의 AI 경진대회 수상 경험을 바탕으로 한 데이터 분석 및 모델링 역량과, 
-          C/C++, Python, React, 그리고 AWS 기반 인프라까지 다루는 풀스택 지식을 통해 
-          단순한 연구를 넘어 실제 운영 가능한 견고한 시스템을 설계합니다.
+          데이터 분석 및 모델링 역량과 풀스택 지식을 바탕으로, 단순한 연구에 그치지 않고 실제 운영 가능한 견고한 시스템을 설계합니다.
         </p>
       </section>
 
@@ -100,8 +97,8 @@ function App() {
       <section className="contact-band" id="contact">
         <div>
           <p className="eyebrow">Contact</p>
-          <h2>함께 만들 이야기가 있다면</h2>
-          <p>프로젝트 맥락, 기술 선택, 협업 방식까지 편하게 이야기할 수 있습니다.</p>
+          <h2>함께할 준비가 되셨나요?</h2>
+          <p>프로젝트, 기술, 협업 방식 등 편하게 연락주세요.</p>
         </div>
         <div className="contact-actions">
           <a className="icon-link" href="https://github.com/JaeHoJeong1130">
